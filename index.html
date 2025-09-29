@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Full Name] - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> <!-- Replace with your GA ID -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX'); <!-- Replace with your GA ID -->
+    </script>
+</head>
+<body>
+    <div id="particles-js"></div> <!-- Particle background -->
+    <header>
+        <nav>
+            <div class="logo">[Full Name]</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="[Headshot.jpg]" alt="Headshot" class="headshot">
+        <h1>[Full Name]</h1>
+        <h2>[Professional Title, e.g., Innovative Software Engineer]</h2>
+        <p>[Tagline, e.g., Driving Scalable Innovations for the Future]</p>
+        <!-- Video Placeholder -->
+        <div class="video-placeholder">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/[YourVideoID]" title="Intro Video" frameborder="0" allowfullscreen></iframe>
+            <!-- Or use <video src="[IntroVideo.mp4]" controls></video> for local -->
+        </div>
+        <p>Sample AI-Generated Script for 30-sec Video: "Hi, I'm [Full Name], a passionate engineer specializing in innovative solutions. At [Past Role], I scaled systems by 200%, emphasizing reliability for enterprise like Oracle and data-driven insights for Palantir. For Tesla, my projects push boundaries in sustainable tech. Let's connect!"</p>
+        <button>Explore My Journey</button>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>[About Me Paragraph 1]</p>
+        <ul>
+            <li>Innovation for Tesla: [Achievement, e.g., Developed AI-optimized algorithms]</li>
+            <li>Data Skills for Palantir: [Achievement, e.g., Analyzed large datasets for insights]</li>
+            <li>Enterprise Reliability for Oracle: [Achievement, e.g., Built fault-tolerant systems]</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <!-- React will render interactive timeline here -->
+            <div id="timeline-root"></div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">[Skill 1, e.g., React]</div>
+            <div class="skill">[Skill 2, e.g., Python]</div>
+            <!-- Add more -->
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>[Project Name 1]</h3>
+            <p>[Description, e.g., Innovative app with scalable backend]</p>
+            <a href="[Link]">View Project</a>
+        </div>
+        <!-- Add more cards -->
+    </section>
+
+    <section id="taskrabbit">
+        <h2>TaskRabbit Reviews (250+ Highlights)</h2>
+        <div class="carousel">
+            <div class="slide">[Review 1: "Excellent service!" - Screenshot or text placeholder]</div>
+            <div class="slide">[Review 2: "Highly reliable." - Placeholder]</div>
+            <!-- JS will handle sliding; add more for 250+ simulated -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/[YourFormID]" method="POST"> <!-- Replace with Formspree ID for email -->
+            <input type="email" name="email" placeholder="[Your Email]">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>[LinkedIn: linkedin.com/in/[username]] | [Phone: (123) 456-7890]</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Full Name]</p>
+    </footer>
+
+    <!-- Dependencies -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.5.0/tsparticles.bundle.min.js"></script>
+    <script type="text/babel" src="script.js"></script>
+</body>
+</html>

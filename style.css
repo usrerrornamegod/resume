@@ -1,0 +1,113 @@
+body {
+    background: #121212;
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li a {
+    color: #00BFFF;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#dark-mode-toggle {
+    background: #00BFFF;
+    color: #121212;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.light-mode {
+    background: #FFFFFF;
+    color: #121212;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.headshot {
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #00BFFF;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    padding: 10px;
+    background: #1E1E1E;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00BFFF;
+}
+
+.timeline .card {
+    opacity: 0;
+    cursor: pointer;
+    margin: 20px;
+    padding: 20px;
+    background: #1E1E1E;
+    border: 1px solid #00BFFF;
+}
+
+.project-card {
+    margin: 20px;
+    padding: 20px;
+    background: #1E1E1E;
+    transition: box-shadow 0.3s;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 20px #00BFFF;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.slide {
+    min-width: 200px;
+    margin: 10px;
+    background: #1E1E1E;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    section { padding: 20px; }
+    nav ul { flex-direction: column; }
+}
