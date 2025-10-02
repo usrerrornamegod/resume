@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Full Name] - Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>Aaron Torres - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> <!-- Replace with your GA ID -->
@@ -16,94 +16,218 @@
     </script>
 </head>
 <body>
-    <div id="particles-js"></div> <!-- Particle background -->
+    <div id="particles-js"></div>
     <header>
-        <nav>
-            <div class="logo">[Full Name]</div>
+        <nav class="flex-nav">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#photography">Photography</a></li>
+                <li><a href="#references">References</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button id="dark-mode-toggle">Toggle Dark Mode</button>
         </nav>
     </header>
 
-    <section id="home">
-        <img src="[Headshot.jpg]" alt="Headshot" class="headshot">
-        <h1>[Full Name]</h1>
-        <h2>[Professional Title, e.g., Innovative Software Engineer]</h2>
-        <p>[Tagline, e.g., Driving Scalable Innovations for the Future]</p>
-        <!-- Video Placeholder -->
-        <div class="video-placeholder">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/[YourVideoID]" title="Intro Video" frameborder="0" allowfullscreen></iframe>
-            <!-- Or use <video src="[IntroVideo.mp4]" controls></video> for local -->
+    <section id="home" class="parallax flex-section">
+        <div class="home-content">
+            <img src="Screenshot 2025-07-11 at 7.29.01 PM-1.jpg" alt="Headshot" class="headshot">
+            <h1>Aaron J. Torres</h1>
+            <h2>Compliance and Operations Expert</h2>
+            <p>Building Trust and Efficiency in Every Operation</p>
+            <button class="cta" onclick="document.querySelector('#about').scrollIntoView({behavior: 'smooth'});">Discover More</button>
         </div>
-        <p>Sample AI-Generated Script for 30-sec Video: "Hi, I'm [Full Name], a passionate engineer specializing in innovative solutions. At [Past Role], I scaled systems by 200%, emphasizing reliability for enterprise like Oracle and data-driven insights for Palantir. For Tesla, my projects push boundaries in sustainable tech. Let's connect!"</p>
-        <button>Explore My Journey</button>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>[About Me Paragraph 1]</p>
-        <ul>
-            <li>Innovation for Tesla: [Achievement, e.g., Developed AI-optimized algorithms]</li>
-            <li>Data Skills for Palantir: [Achievement, e.g., Analyzed large datasets for insights]</li>
-            <li>Enterprise Reliability for Oracle: [Achievement, e.g., Built fault-tolerant systems]</li>
-        </ul>
+    <section id="about" class="flex-section">
+        <div class="left-col">
+            <h2>About Me</h2>
+            <p>Aaron J. Torres is an ambitious and versatile professional hailing from New York, born in Brooklyn and raised on Long Island, currently residing in the vibrant Lower Manhattan. With a high school diploma complemented by art awards and graphic design coursework at Kingsborough Community College, Aaron has always been drawn to creative pursuits, excelling in graphic design and photography—both digital and film formats. His innate curiosity drives him to dissect and enhance the systems around him, whether through optimizing workflows or innovating solutions to everyday challenges. This enthusiasm for personal growth and skill acquisition has been a constant thread throughout his career, fueling his commitment to delivering exceptional results in every endeavor.</p>
+            <p>Professionally, Aaron began his journey as a creative director at a clothing brand, where he led impactful media campaigns, product editorials, and collaborations between brands, blending his artistic talents with strategic vision to elevate brand presence and engagement. Building on this foundation, he transitioned to an account executive role at a handyman company, leveraging his sales acumen to secure more than 250 referrals, demonstrating his ability to build strong client relationships and drive business success. His hands-on expertise in carpentry and handyman skills, honed through managing service teams, has equipped him with practical problem-solving abilities that extend beyond traditional office settings. Currently, as a compliance officer at a moving company with over four years of experience, Aaron ensures regulatory adherence and operational integrity in a fast-paced environment. These experiences underscore his versatility, blending compliance acumen with creative innovation.</p>
+            <p>Beyond his professional achievements, Aaron is a beam of energy dedicated to improving the spaces and processes around him. He thrives on learning how systems function and identifying opportunities for efficiency gains, a mindset that aligns seamlessly with his interest in automotive service. Whether wrenching on cars, immersing himself in business books, or maintaining physical fitness, Aaron approaches life with unwavering enthusiasm and professionalism. His diverse skill set—from creative media production to hands-on technical proficiency—positions him as a valuable asset in dynamic industries, where he continues to seek roles that allow him to grow, innovate, and contribute meaningfully. Aaron's formal yet passionate approach ensures he not only meets expectations but exceeds them, always looking forward to the next challenge with optimism and determination.</p>
+        </div>
+        <div class="right-col">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Carpentry <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div></li>
+                <li>Photoshop <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div></li>
+                <li>Adobe Illustrator <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div></li>
+                <li>HTML <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div></li>
+                <li>CSS <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div></li>
+                <li>JavaScript <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div></li>
+                <li>Fashion Design (Sewing Machines) <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div></li>
+                <li>Handy Work (Basic Electrical to Light Construction) <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div></li>
+                <li>Hand tools fluency <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div></li>
+                <li>Logo Design <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div></li>
+                <li>Graphic Design <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div></li>
+                <li>Digital/Film Photography <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div></li>
+                <li>Creative Direction (Media Campaigns) <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div></li>
+                <li>Sales & Client Management <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div></li>
+                <li>Regulatory Compliance <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div></li>
+                <li>Workflow Optimization <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div></li>
+            </ul>
+        </div>
     </section>
 
     <section id="experience">
         <h2>Experience</h2>
-        <div class="timeline">
-            <!-- React will render interactive timeline here -->
-            <div id="timeline-root"></div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Compliance Officer</h3>
+                <p>Piece Of Cake Moving & Storage</p>
+                <ul>
+                    <li>Conducted audits to identify risks.</li>
+                    <li>Led and trained teams on compliance protocols.</li>
+                    <li>Developed and implemented compliance training programs.</li>
+                    <li>Creation of compliance documentation and resources.</li>
+                    <li>Monitored industry regulations and updated policies accordingly.</li>
+                    <li>Collaborated with legal and regulatory bodies to ensure company practices met all necessary standards.</li>
+                    <li>Investigated and resolved compliance issues promptly.</li>
+
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>Account Executive</h3>
+                <p>Lower Manhattan Handyman</p>
+                <ul>
+                    <li>Established trustful relationships with clients through regular follow-up calls or emails furthering sales goals.</li>
+                    <li>Maintained an up-to-date knowledge of industry developments, regulations, and best practices.</li>
+                    <li>Collaborated with cross-functional teams to generate innovative solutions for customers' needs.</li>
+                    <li>Utilized CRM software to track customer interactions and sales progress.</li>
+                    <li>Job site visits to assess project requirements and client needs.</li>
+                    <li>Provided accurate estimates and quotes for services.</li>
+                    <li>Coordinated scheduling and logistics for service appointments.</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>Creative Director</h3>
+                <p>Barriers Worldwide</p>
+                <ul>
+                    <li>Created multiple lines of clothing designs that have reached over $1 million in sales.</li>
+                    <li>Fostered relationships with vendors to ensure timely delivery of materials within budget constraints.</li>
+                    <li>Created logos, flyers, and other marketing materials.</li>
+                    <li>Developed creative strategies to increase engagement with target audiences.</li>
+                    <li>Edited multimedia assets to optimize performance on various platforms.</li>
+                    <li>Managed the production of promotional materials, including printand digital collateral.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">[Skill 1, e.g., React]</div>
-            <div class="skill">[Skill 2, e.g., Python]</div>
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="projects-grid">
+            <div class="static-card">
+                <h3>Fashion Design</h3>
+                <p>Mood Sewing School</p>
+            </div>
+            <div class="static-card">
+                <h3>Carpentry</h3>
+                <p>M.J.H.S. Carpentry Program</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="awards">
+        <h2>Awards</h2>
+        <div class="projects-grid">
+            <div class="project-card parallax">
+                <h3>ASA All County Art Show</h3>
+                <p>The Art Supervisors Association (ASA) is a professional Organization of art supervisors and administrators. Its membership principally represents the Nassau County area. A non-profit advocacy group for education in the Visual Arts, ASA is active in the promotion of quality art instruction at all educational levels and provides a forum for ideas relating to art and art education.</p>
+                <a href="https://www.artsupervisorsassociation.org/2018-all-county-gallery.html">View Project</a>
+            </div>
+            <div class="project-card parallax">
+                <h3>Photographers' Forum Finalist Best of College & High School Photography 2017</h3>
+                <p>Established in 1978, Photographer’s Forum magazine was an award-winning publication dedicated to quality reproduction of photography in the United States and Canada. Glen Serbin was the founding editor and publisher of Photographer’s Forum magazine from 1978-2018. The Smithsonian National Museum of American History in Washington D.C. as well as the University of Missouri Journalism & History library has archived Photographer’s Forum magazine from November 1978-2018. Each issue strived to facilitate communication and publication experience among emerging professionals.</p>
+                <a href="https://www.pfmagazine.net/category/photography-annuals/best-of-college-photography/">View Project</a>
+            </div>
+            <!-- Add more; vary heights for masonry -->
+        </div>
+    </section>
+
+    <section id="photography" class="parallax">
+        <h2>Photography Portfolio</h2>
+        <div class="carousel photography-carousel">
+            <div class="slide"><img src="IMG_1639.JPG" alt="Photo 1" class="photo"></div>
+            <div class="slide"><img src="IMG_1640.JPG" alt="Photo 2" class="photo"></div>
+            <div class="slide"><img src="IMG_1641.JPG" alt="Photo 3" class="photo"></div>
+            <!-- Add more; replace with your VSCO images -->
+        </div>
+        <a href="https://vsco.co/aaronjtorres/gallery" class="vsco-link">View Full Gallery on VSCO</a>
+    </section>
+
+    <section id="references">
+        <h2>References (250+)</h2>
+        <div class="projects-grid carousel references-carousel">
+            <div class="project-grid slide parallax">
+                <h3>Anneka A.</h3>
+<p>"Aaron was super responsive,flexible, and professional. 
+He very carefully moved a number of large plants for me
+and made multiple stops, communicating with me along the
+way (and the very next day from my request, too!) The plants
+are sensitive and were in great shape because he knew how to
+handle them properly. I would definitely work with Aaron again
+and recommend him."
+
+October 22, 2024</p>
+            </div>
+            <div class="project-card slide parallax">
+                <h3>Liz L.</h3>
+<p>"Aaron and his crew were super professional, friendly, and efficient!
+They had positive energy and Aaron was very personable. They helped me
+move from East Village (on the sixth floor walkup too!) to Greenpoint and
+made sure all my items were handled with care. Aaron super willing to help
+me mount my tv after the move as well. I will definitely book Aaron in the
+future and can't recommend enough!"
+
+
+September 5, 2024</p>
+            </div>
+            <div class="project-card slide parallax">
+                <h3>Jeremy F.</h3>
+                <p>"What a great guy! So easy to work with and responsive and so helpful!" 
+                    
+October 22, 2023</p>
+            </div>
+            <div class="project-card slide parallax">
+                <h3>Maralou B.</h3>
+<p>"Aaron took on a move for us that involved multiple boxes
+and a couple of rooms of furniture. He had to partially disassemble
+some of the furniture to get it through the doors before transporting
+it and reassemble it in the new apartment - no problem. He and his team
+carried everything up 3 flights of stairs - no problem. He placed every
+piece of furniture where we wanted it and did an awesome job - no problem,
+and not a nick or scratch on anything, including the walls! If you want a
+problem-free move, I HIGHLY recommend Aaron T. He is a true professional
+and we will definitely contact him if we need to move again!"
+
+September 26, 2024</p>
+            </div>
             <!-- Add more -->
         </div>
+        <div><p>To view more references contact me using the form below.</p></div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>[Project Name 1]</h3>
-            <p>[Description, e.g., Innovative app with scalable backend]</p>
-            <a href="[Link]">View Project</a>
+    <section id="contact" class="flex-section">
+        <div class="left-col">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/[YourFormID]" method="POST">
+                <input type="email" name="email" placeholder="[Your Email]">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
-        <!-- Add more cards -->
-    </section>
-
-    <section id="taskrabbit">
-        <h2>TaskRabbit Reviews (250+ Highlights)</h2>
-        <div class="carousel">
-            <div class="slide">[Review 1: "Excellent service!" - Screenshot or text placeholder]</div>
-            <div class="slide">[Review 2: "Highly reliable." - Placeholder]</div>
-            <!-- JS will handle sliding; add more for 250+ simulated -->
+        <div class="right-col">
+            <!-- Removed -->
         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="https://formspree.io/f/[YourFormID]" method="POST"> <!-- Replace with Formspree ID for email -->
-            <input type="email" name="email" placeholder="[Your Email]">
-            <textarea name="message" placeholder="Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p>[LinkedIn: linkedin.com/in/[username]] | [Phone: (123) 456-7890]</p>
     </section>
 
     <footer>
-        <p>&copy; 2025 [Full Name]</p>
+        <p>&copy; 2025 Aaron J. Torres</p>
     </footer>
 
     <!-- Dependencies -->
@@ -111,7 +235,11 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.5.0/tsparticles.bundle.min.js"></script>
     <script type="text/babel" src="script.js"></script>
+
+    <!-- AI Chatbot: Tidio Embed -->
+    <script src="//code.tidio.co/[YourTidioKey].js" async></script> <!-- Replace [YourTidioKey] -->
 </body>
 </html>
